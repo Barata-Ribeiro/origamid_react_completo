@@ -8,8 +8,12 @@ const ButtonModal = ({ setModal }) => {
     fontWeight: 'bold',
   };
 
+  function handleClick() {
+    setModal((ativo) => !ativo);
+  }
+
   return (
-    <button onClick={() => setModal(true)} style={buttonStyle}>
+    <button onClick={handleClick} style={buttonStyle}>
       Abrir
     </button>
   );
