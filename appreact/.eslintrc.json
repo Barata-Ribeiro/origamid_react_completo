@@ -1,5 +1,9 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:react-hooks/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
   "settings": {
     "react": {
       "version": "detect"
@@ -14,7 +18,8 @@
     }
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "es6": true
   },
   "rules": {
     "react/react-in-jsx-scope": "off",
