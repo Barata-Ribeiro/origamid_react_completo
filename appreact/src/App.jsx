@@ -1,13 +1,9 @@
-import React from 'react';
-import Title from './04-CSS/21-CSS-import/Title';
-import './04-CSS/21-CSS-import/App.css';
+import React from 'react'
 
 const App = () => {
   return (
-    <div className='AppContainer'>
-      <Title />
-    </div>
-  );
-};
+    <div>App</div>
+  )
+}
 
-export default App;
+export default App

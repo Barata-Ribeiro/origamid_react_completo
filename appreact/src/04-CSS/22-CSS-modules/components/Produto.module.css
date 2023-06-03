@@ -1,0 +1,25 @@
+.titulo,
+.preco {
+  color: #43c;
+}
+
+@value peso: bold;
+@value cor: red;
+
+.preco {
+  color: cor;
+  font-weight: peso;
+}
+
+/* Não é aconselhável utilizar dessa forma */
+/* .preco-total {
+  font-weight: bold;
+} */
+
+.comprar {
+  transform: rotate(90deg) translateY(-120px);
+}
+
+:global .container {
+  max-width: 900px;
+}
