@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, useLocation, NavLink, Outlet } from 'react-router-dom';
+import Head from './Head';
 
 const Produto = () => {
   const params = useParams();
@@ -9,6 +10,8 @@ const Produto = () => {
 
   return (
     <>
+      <Head title='Produtos' description='Aqui estão nossos produtos...' />
+
       <h1>Produto: {params.id}</h1>
       <nav>
         <ul style={{ display: 'flex', listStyle: 'none', gap: '8px' }}>

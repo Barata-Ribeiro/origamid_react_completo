@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Head from './Head';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -9,6 +10,8 @@ const Login = () => {
   };
   return (
     <>
+      <Head title='Login' description='Aqui é onde você irá logar...' />
+
       <h1>Login</h1>
       <button onClick={handleClick}>Login</button>
     </>
