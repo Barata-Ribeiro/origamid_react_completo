@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <h1>Home</h1>
       <p>Essa é a home.</p>
-      <ul>
+      <ul style={{ display: 'flex', listStyle: 'none', gap: '8px' }}>
         <li>
           <Link to='produto/notebook'>Notebook</Link>
         </li>
