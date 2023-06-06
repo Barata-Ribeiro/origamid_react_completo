@@ -1,8 +1,26 @@
 .produto {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2.5rem;
 }
 
 .produto img {
-  height: 500px;
+  max-height: 500px;
+  border-radius: 8px;
+}
+
+.preco {
+  font-size: 0.75em;
+  font-weight: 700;
+  color: green;
+  background-color: greenyellow;
+  max-width: max-content;
+  padding: 2px 4px;
+  border: 1px solid green;
+  border-radius: 4px;
+}
+
+.descricao {
+  max-width: 35ch;
 }

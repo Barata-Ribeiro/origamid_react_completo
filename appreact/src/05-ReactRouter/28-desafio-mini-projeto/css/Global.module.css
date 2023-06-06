@@ -4,3 +4,36 @@
   margin: 0 auto;
   max-width: 960px;
 }
+
+/* LOADING */
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  position: relative;
+  transform: translateZ(0);
+}
+
+.spinnerInner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  animation: pulse 1.5s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+}

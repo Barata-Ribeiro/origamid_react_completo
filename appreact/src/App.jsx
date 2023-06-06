@@ -11,23 +11,12 @@ import NotFound from './05-ReactRouter/28-desafio-mini-projeto/NotFound';
 // Cada produto possui o id, o mesmo pode ser passado na api para retornar os dados desse produto específico
 // https://ranekapi.origamid.dev/json/api/produto/notebook
 
-const App = () => {
-  const [produtos, setProdutos] = React.useState([]);
-
-  React.useEffect(() => {
-    async function getProdutos() {
-      const response = await fetch('https://ranekapi.origamid.dev/json/api/produto');
-      const json = await response.json();
-      setProdutos(json);
-    }
-    getProdutos();
-  }, []);
-
+const App = () => { 
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path='/' element={<Produtos produtos={produtos} />} />
+        <Route path='/' element={<Produtos />} />
         <Route path='/produto/:id' element={<Produto />} />
         <Route path='contato' element={<Contato />} />
         <Route path='*' element={<NotFound />} />

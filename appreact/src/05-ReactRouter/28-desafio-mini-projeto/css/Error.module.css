@@ -1,0 +1,14 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 250px auto;
+}
+
+.error span {
+  font-size: 5em;
+  color: #19f;
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 5px solid #19f;
+}

@@ -1,38 +1,47 @@
 import React from 'react';
 import { useParams, Outlet } from 'react-router-dom';
+import useFetch from './Hooks/useFetch';
+import Error from './Error';
+import Head from './Head';
 import globalStyles from './css/Global.module.css';
 import styles from './css/Produto.module.css';
 
 const Produto = () => {
-  const [produto, setProduto] = React.useState(null);
+  const { data, request, loading, error } = useFetch();
   const params = useParams();
 
   React.useEffect(() => {
-    async function getProduto() {
-      const response = await fetch(
+    async function fetchData() {
+      const { response, json } = await request(
         `https://ranekapi.origamid.dev/json/api/produto/${params.id}`
       );
-      const json = await response.json();
-      setProduto(json);
     }
-    getProduto();
-  }, [params.id]);
+    fetchData();
+  }, [request, params.id]);
 
-  if (!produto) null;
+  if (error) return <Error message={error} />;
+  if (loading)
+    return (
+      <div className={globalStyles.spinner}>
+        <div className={globalStyles.spinnerInner}></div>
+      </div>
+    );
+  if (!data) return null;
 
   return (
     <>
       <main className={globalStyles.container}>
+        <Head title={data.nome} description={data.descricao} />
         <div className={styles.produto}>
           <img
-            src={produto['fotos'][0].src}
-            alt={produto['fotos'][0].titulo}
-            title={produto['fotos'][0].titulo}
+            src={data['fotos'][0].src}
+            alt={data['fotos'][0].titulo}
+            title={data['fotos'][0].titulo}
           />
           <div>
-            <h1>{produto.nome}</h1>
-            <p>{produto.descricao}</p>
-            <p>Preço: {produto.preco}</p>
+            <h2>{data.nome}</h2>
+            <p className={styles.preco}>R$ {data.preco}</p>
+            <p className={styles.descricao}>{data.descricao}</p>
           </div>
         </div>
       </main>
