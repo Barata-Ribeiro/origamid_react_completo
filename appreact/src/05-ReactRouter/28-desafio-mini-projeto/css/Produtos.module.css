@@ -1,0 +1,13 @@
+.produtos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+}
+
+.produto img {
+  max-height: 350px;
+  border-radius: 8px;
+}
