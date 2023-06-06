@@ -4,11 +4,18 @@
   align-items: center;
   list-style: none;
   gap: 8px;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0;
+  padding: 0;
 }
 
 .links a {
   text-decoration: none !important;
-  color: white;
+  color: #333;
   text-align: center;
   font-size: 1em;
   line-height: 0;

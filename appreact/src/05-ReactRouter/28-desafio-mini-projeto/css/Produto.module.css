@@ -1,0 +1,8 @@
+.produto {
+  display: flex;
+  justify-content: center;
+}
+
+.produto img {
+  height: 500px;
+}
