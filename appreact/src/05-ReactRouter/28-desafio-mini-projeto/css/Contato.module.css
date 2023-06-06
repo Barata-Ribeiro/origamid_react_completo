@@ -1,0 +1,23 @@
+.contato {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.contato img {
+  max-height: 700px;
+  border-radius: 8px;
+}
+
+.lista {
+  list-style: inside disc;
+  font-size: 1.25em;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.lista li + li {
+  margin-top: 1.25em;
+}
