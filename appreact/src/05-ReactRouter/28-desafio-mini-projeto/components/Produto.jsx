@@ -30,7 +30,7 @@ const Produto = () => {
 
   return (
     <>
-      <main className={globalStyles.container}>
+      <main className={`${globalStyles.container} ${globalStyles.animeLeft}`}>
         <Head title={data.nome} description={data.descricao} />
         <div className={styles.produto}>
           <img

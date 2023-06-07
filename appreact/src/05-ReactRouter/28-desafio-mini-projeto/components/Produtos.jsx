@@ -37,7 +37,7 @@ const Produtos = () => {
   if (!data) return null;
 
   return (
-    <div className={globalStyles.container}>
+    <div className={`${globalStyles.container} ${globalStyles.animeLeft}`}>
       <ul className={styles.produtos}>
         {data.map((produto) => (
           <li className={styles.produto} key={produto.id}>

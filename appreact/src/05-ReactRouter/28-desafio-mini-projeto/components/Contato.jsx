@@ -7,7 +7,7 @@ import Head from './Head';
 const Contato = () => {
   return (
     <>
-      <main className={globalStyles.container}>
+      <main className={`${globalStyles.container} ${globalStyles.animeLeft}`}>
         <Head title='Contato' description='Entre em contato conosco!' />
         <div className={styles.contato}>
           <img

@@ -11,11 +11,20 @@
 }
 
 .lista {
-  list-style: inside disc;
+  list-style: none;
   font-size: 1.25em;
   font-weight: 500;
   margin: 0;
   padding: 0;
+}
+
+.lista li::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: #ddd;
+  margin-right: 0.5em;
 }
 
 .lista li + li {
