@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import globalStyles from './css/Global.module.css';
-import styles from './css/Contato.module.css';
+import globalStyles from '../css/Global.module.css';
+import styles from '../css/Contato.module.css';
 import Head from './Head';
 
 const Contato = () => {

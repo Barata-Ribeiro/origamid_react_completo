@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams, Outlet } from 'react-router-dom';
-import useFetch from './Hooks/useFetch';
+import useFetch from '../Hooks/useFetch';
 import Error from './Error';
 import Head from './Head';
-import globalStyles from './css/Global.module.css';
-import styles from './css/Produto.module.css';
+import globalStyles from '../css/Global.module.css';
+import styles from '../css/Produto.module.css';
 
 const Produto = () => {
   const { data, request, loading, error } = useFetch();

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import globalStyles from './css/Global.module.css';
-import styles from './css/Produtos.module.css';
-import useFetch from './Hooks/useFetch';
+import globalStyles from '../css/Global.module.css';
+import styles from '../css/Produtos.module.css';
+import useFetch from '../Hooks/useFetch';
 import Error from './Error';
 
 const Produtos = () => {

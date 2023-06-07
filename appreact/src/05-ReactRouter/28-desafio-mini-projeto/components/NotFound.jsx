@@ -1,6 +1,6 @@
 import React from 'react';
-import globalStyles from './css/Global.module.css';
-import styles from './css/404.module.css';
+import globalStyles from '../css/Global.module.css';
+import styles from '../css/404.module.css';
 
 const NotFound = () => {
   return (

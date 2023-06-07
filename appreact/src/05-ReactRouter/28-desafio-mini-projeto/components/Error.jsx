@@ -1,6 +1,6 @@
 import React from 'react';
-import globalStyles from './css/Global.module.css';
-import styles from './css/Error.module.css';
+import globalStyles from '../css/Global.module.css';
+import styles from '../css/Error.module.css';
 
 const Error = ({ message }) => {
   return (
