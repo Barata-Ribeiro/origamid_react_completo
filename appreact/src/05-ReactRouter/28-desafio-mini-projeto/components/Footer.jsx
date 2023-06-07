@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className={globalStyles.container}>
       <div className={styles.footer}>
         <p>
-          Ranek © {year} Alguns direitos reservados - Desafio por:{' '}
+          Ranek © {year} Alguns direitos reservados - Desafio realizado por:{' '}
           <a href='https://www.linkedin.com/in/jo%C3%A3o-mendes-jorge-barata-ribeiro-645073118/'>
             Barata Ribeiro
           </a>
